@@ -1,0 +1,128 @@
+:root {
+  --bg-color: hsl(47, 88%, 63%);
+  --card-bg: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 7%);
+  --text-color-light: hsl(0, 0%, 42%);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "YoungSerif-Regular", "Outfit-VariableFont_wght", Arial,
+    sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "Figtree-ExtraBold";
+  src: url("./assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree-Medium";
+  src: url("./assets/fonts/static/Figtree-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  font-family: "Figtree-ExtraBold";
+  padding: 20px;
+  max-width: 380px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 10px 10px;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.text {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.55rem;
+  font-weight: bold;
+}
+
+h1:hover {
+  color: var(--bg-color);
+  cursor: pointer;
+}
+
+.text2 {
+  color: var(--text-color-light);
+  margin-bottom: 20px;
+}
+
+.personalPic {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.personalPic span:first-of-type {
+  width: 30px;
+  height: 30px;
+}
+
+.personalPic span {
+  font-weight: bold;
+}
+
+@media (max-width: 376px) {
+  * {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  button {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+  }
+
+  .text {
+    font-size: 0.85rem;
+  }
+
+  h1 {
+    font-size: 1.45rem;
+  }
+
+  .personalPic span {
+    font-size: 1.1rem;
+  }
+}
